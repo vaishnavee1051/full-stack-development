@@ -1,0 +1,70 @@
+<html>
+
+	<body>
+	
+	<script>
+		
+		
+	
+		function add(){
+			let fno=f1.fno.value;
+			let sno=f1.sno.value;
+			
+			f1.res.value=Number(fno)+Number(sno);
+			
+		}
+		
+		function sub(){
+			let fno=f1.fno.value;
+			let sno=f1.sno.value;
+			
+			f1.res.value=Number(fno)-Number(sno);
+		}
+		
+		function mul(){
+			let fno=f1.fno.value;
+			let sno=f1.sno.value;
+			
+			f1.res.value=Number(fno)*Number(sno);
+		}
+		
+		function div(){
+			let fno=f1.fno.value;
+			let sno=f1.sno.value;
+			
+			f1.res.value=Number(fno)/Number(sno);
+		}
+		
+		function mod(){
+			let fno=f1.fno.value;
+			let sno=f1.sno.value;
+			
+			f1.res.value=Number(fno)%Number(sno);
+		}
+		
+		
+		
+	</script>
+	
+	<form name="f1">
+		First No.:<input type="text" name="fno">
+		Second No.:<input type="text" name="sno">
+		<br>
+		<br>
+		<abbr  title="addition"><input type="button" value="+" onclick="add()"></abbr>
+		<abbr  title="subtraction"><input type="button" value="-" onclick="sub()"></abbr>
+		<abbr  title="multiplication"><input type="button" value="*" onclick="mul()"></abbr>
+		<abbr  title="division"><input type="button" value="/" onclick="div()"></abbr>
+		<abbr  title="modulus"><input type="button" value="%" onclick="mod()"></abbr>
+		<br>
+		<br>
+		<input type="text" name="res">
+		
+	</form>
+	
+	
+	
+	</body>
+	
+</html>
+
