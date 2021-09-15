@@ -1,0 +1,98 @@
+<html>
+<head>
+</head>
+<body>
+		 <canvas id="mycanvas" width="350" height="350" style="border:5px solid"></canvas>
+	<script>
+		let canvas=document.getElementById("mycanvas");
+		let context=canvas.getContext("2d");
+		
+		context.beginPath();
+		let x=canvas.width/2;
+		let y=canvas.height/2;
+		let r=110;
+		let sa=0*Math.PI;
+		let ea=2*Math.PI;
+		let ck=false;
+		
+		context.arc(x,y,r,sa,ea,ck)
+		context.lineWidth=5;
+		context.strokestyle="black";
+		context.stroke();
+		
+		context.beginPath();
+      context.moveTo(100,140);
+      context.quadraticCurveTo(130,100, 145, 140);
+      context.lineWidth =5;
+       context.strokeStyle = 'black';
+      context.stroke();
+	  
+	  context.beginPath();
+      context.moveTo(200,140);
+      context.quadraticCurveTo(230,100, 245, 140);
+      context.lineWidth =5;
+       context.strokeStyle = 'black';
+      context.stroke();
+	  
+	  context.beginPath();
+		let x1=120;
+		let y1=140;
+		let r1=9;
+		let sa1=0*Math.PI;
+		let ea1=2*Math.PI;
+		let ck1=false;
+		
+		context.arc(x1,y1,r1,sa1,ea1,ck1)
+		context.lineWidth=5;
+		context.strokestyle="black";
+		context.stroke();
+		
+		context.beginPath();
+		let x2=220;
+		let y2=140;
+		let r2=9;
+		let sa2=0*Math.PI;
+		let ea2=2*Math.PI;
+		let ck2=false;
+		
+		context.arc(x2,y2,r2,sa2,ea2,ck2)
+		context.lineWidth=5;
+		context.strokestyle="black";
+		context.stroke();
+		
+		context.beginPath();
+      context.moveTo(170,160);
+      context.quadraticCurveTo(180,250, 185, 210);
+      context.lineWidth =5;
+       context.strokeStyle = 'black';
+      context.stroke();
+	  
+	  context.beginPath();
+      context.moveTo(150,240);
+      context.quadraticCurveTo(200,250, 210, 240);
+      context.lineWidth =5;
+       context.strokeStyle = 'black';
+      context.stroke();
+	  
+	  context.beginPath();
+      context.moveTo(210,240);
+      context.quadraticCurveTo(180,240, 150, 240);
+      context.quadraticCurveTo(180,240, 150, 240);
+      context.lineWidth =5;
+       context.strokeStyle = 'black';
+      context.stroke();
+	  
+	  var grd=ctx.createRadialGradient(75,20,5,90,60,100);
+grd.addColorStop(0,"gray");
+grd.addColorStop(1,"green");
+
+
+ctx.fillStyle=grd;
+ctx.fillRect(10,10,150,80);
+
+
+
+</script>
+</body>
+</html>
+	
