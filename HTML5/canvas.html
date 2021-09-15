@@ -1,0 +1,97 @@
+
+<html>
+<head>
+</head>
+<body>
+	<canvas id="mycanvas" width="500" height="500" style="border:5px solid"></canvas>
+	<script>
+		let canvas=document.getElementById("mycanvas");
+		let context=canvas.getContext("2d");
+		
+		context.beginPath();
+		let x=250;
+		let y=canvas.height/2;
+		let r=150;
+		let sa=0*Math.PI;
+		let ea=2*Math.PI;
+		let ck=false;
+		
+		context.arc(x,y,r,sa,ea,ck)
+		context.lineWidth=3;
+		context.strokestyle="black";
+		context.stroke();
+		
+		context.beginPath();
+		context.moveTo(200,0);
+		context.lineTo(200,110);
+		context.lineWidth=5;
+		context.strokeStyle="red";
+		context.stroke();
+		
+		context.beginPath();
+		context.moveTo(300,0);
+		context.lineTo(300,110);
+		context.lineWidth=5;
+		context.strokeStyle="red";
+		context.stroke();
+		
+		context.beginPath();
+		context.moveTo(110,200);
+		context.lineTo(0,200);
+		context.lineWidth=5;
+		context.strokeStyle="red";
+		context.stroke();
+		
+		context.beginPath();
+		context.moveTo(110,300);
+		context.lineTo(0,300);
+		context.lineWidth=5;
+		context.strokeStyle="red";
+		context.stroke();
+		
+		context.beginPath();
+		context.moveTo(500,200);
+		context.lineTo(390,200);
+		context.lineWidth=5;
+		context.strokeStyle="red";
+		context.stroke();
+		
+		context.beginPath();
+		context.moveTo(500,300);
+		context.lineTo(390,300);
+		context.lineWidth=5;
+		context.strokeStyle="red";
+		context.stroke();
+		
+		context.beginPath();
+		context.moveTo(200,500);
+		context.lineTo(200,390);
+		context.lineWidth=5;
+		context.strokeStyle="red";
+		context.stroke();
+		
+		context.beginPath();
+		context.moveTo(300,500);
+		context.lineTo(300,390);
+		context.lineWidth=5;
+		context.strokeStyle="red";
+		context.stroke();
+		
+		context.beginPath();
+		context.moveTo(0,0);
+		context.lineTo(500,500);
+		context.lineWidth=3;
+		context.strokeStyle="yellow";
+		context.stroke();
+		
+		context.beginPath();
+		context.moveTo(500,0);
+		context.lineTo(0,500);
+		context.lineWidth=3;
+		context.strokeStyle="yellow";
+		context.stroke();
+		
+		
+	</script>
+</body>
+</html>
