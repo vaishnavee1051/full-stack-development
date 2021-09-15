@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      context.lineWidth =5;    
+      context.beginPath();
+      context.moveTo(99, 250);
+      context.lineTo(99, 50);
+      context.lineTo(250, 150);
+	  context.lineTo(40, 150);
+	  context.lineTo(250, 50);
+	  context.lineTo(99, 250);
+      context.lineJoin = 'miter';
+      context.stroke();
+ </script>
+  </body>
+</html>
