@@ -1,0 +1,49 @@
+<html>
+<head>
+</head>
+<body>
+		 <canvas id="mycanvas" width="300" height="300" style="border:5px solid"></canvas>
+	<script>
+		let canvas=document.getElementById("mycanvas");
+		let context=canvas.getContext("2d");
+		
+		context.beginPath();
+		context.moveTo(50,50);
+		context.lineTo(50,250);
+		context.lineWidth=5;
+		context.strokeStyle="red";
+		context.stroke();
+		
+		context.beginPath();
+		context.moveTo(50,150);
+		context.lineTo(250,150);
+		context.lineWidth=5;
+		context.strokeStyle="red";
+		context.stroke();
+		
+     
+      context.beginPath();
+      context.moveTo(50, 150);
+      context.quadraticCurveTo(70, 70, 100, 150);
+      context.lineWidth =3;
+       context.strokeStyle = 'blue';
+      context.stroke();
+		
+		context.beginPath();
+      context.moveTo(100, 150);
+      context.quadraticCurveTo(140, 240, 150, 150);
+      context.lineWidth =3;
+       context.strokeStyle = 'blue';
+      context.stroke();
+		
+		context.beginPath();
+      context.moveTo(150, 150);
+      context.quadraticCurveTo(170, 70, 200, 150);
+      context.lineWidth =3;
+       context.strokeStyle = 'blue';
+      context.stroke();
+		
+</script>
+		
+</body>
+</html>
